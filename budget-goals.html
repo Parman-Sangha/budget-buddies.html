@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Goals - Expense Tracker App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="budget-goals-header">
+      <h1 class="budget-goals-title">Budget Buddies</h1>
+      <nav class="budget-goals-nav">
+        <a href="index.html">Home</a>
+        <a href="add-transaction.html">Add Transaction</a>
+        <a href="budget-goals.html">Budget Goals</a>
+      </nav>
+    </header>
+    <main class="budget-goals-main">
+      <section class="budget-goals-section">
+        <h2 class="budget-goals-heading">Budget Goals</h2>
+        <form class="budget-goals-form">
+          <div class="form-group">
+            <label for="goal">Set Your Goal</label>
+            <input type="number" id="goal" name="goal" required />
+          </div>
+          <button type="submit" class="main-button">Set Goal</button>
+        </form>
+        <div class="goal-progress">
+          <h3>Current Goal: $0</h3>
+          <p>Progress: 0%</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="budget-goals-footer">
+      <p>Parman.S & Ranjit.L</p>
+    </footer>
+  </body>
+</html>

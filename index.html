@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Budget Buddies</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="add-transaction.html">Add Transaction</a>
+        <a href="budget-goals.html">Budget Goals</a>
+      </nav>
+    </header>
+    <main>
+      <section class="overview">
+        <h2>Overview</h2>
+        <div class="container">
+          <div class="balance">
+            <h3>Total Balance</h3>
+            <p>$1568</p>
+          </div>
+          <div class="income">
+            <h3>Total Income</h3>
+            <div>
+              <input
+                type="number"
+                id="income-input"
+                name="income"
+                placeholder="Add Income"
+              />
+            </div>
+            <button class="main-button">Submit</button>
+          </div>
+          <div class="expense">
+            <h3>Total Expense</h3>
+            <div>
+              <input
+                type="number"
+                id="income-input"
+                name="income"
+                placeholder="Add Expense"
+              />
+            </div>
+            <button class="main-button">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section class="transaction-history">
+        <h2>Transaction History</h2>
+        <div class="transaction-list">
+          <div class="transaction">
+            <div class="transaction-details">
+              <p class="transaction-date">July 1, 2024</p>
+              <p class="transaction-description">Grocery Shopping</p>
+            </div>
+            <p class="transaction-amount expense">$50.00</p>
+          </div>
+          <div class="transaction">
+            <div class="transaction-details">
+              <p class="transaction-date">June 30, 2024</p>
+              <p class="transaction-description">Salary</p>
+            </div>
+            <p class="transaction-amount income">$2000.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="budget-goals">
+        <h2>Budget Goals</h2>
+        <form class="budget-goals-form">
+          <div class="form-group">
+            <label for="goal">Set Your Goal</label>
+            <input type="number" id="goal" name="goal" required />
+          </div>
+          <button type="submit" class="main-button">Set Goal</button>
+        </form>
+        <div class="goal-progress">
+          <h3>Current Goal: $0</h3>
+          <p>Progress: 0%</p>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Parman.S & Ranjit.L</p>
+    </footer>
+  </body>
+</html>
